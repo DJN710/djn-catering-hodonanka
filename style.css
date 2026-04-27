@@ -65,21 +65,19 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(30,20,16,0.08); }
 
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('images/catering_1.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.35;
-  transform: scale(1.05);
-  animation: slowZoom 18s ease-in-out infinite alternate;
+  background: linear-gradient(135deg, #1e1410 0%, #2e1a0e 25%, #1a1208 50%, #2a1810 75%, #1e1410 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease-in-out infinite alternate;
 }
-@keyframes slowZoom {
-  from { transform: scale(1.05); }
-  to   { transform: scale(1.12); }
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(160deg, rgba(30,20,16,0.5) 0%, rgba(74,46,26,0.3) 100%);
+  background: linear-gradient(180deg, rgba(30,20,16,0.2) 0%, rgba(30,20,16,0.5) 100%);
 }
 
 .hero-content {
