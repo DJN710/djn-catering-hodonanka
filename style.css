@@ -65,7 +65,7 @@ nav.scrolled { box-shadow: 0 4px 24px rgba(30,20,16,0.08); }
 
 .hero-bg {
   position: absolute; inset: 0;
-  background-image: url('images/catering_1.jpg');
+  background-image: url('images/catering_1.png');
   background-size: cover;
   background-position: center;
   opacity: 0.35;
